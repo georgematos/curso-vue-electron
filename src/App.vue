@@ -1,11 +1,11 @@
 <template>
   <v-app>
     <v-app-bar app color="primary" dark>
-      <v-toobar-title>Most Used words</v-toobar-title>
+      <v-toolbar-title>Most Used words</v-toolbar-title>
     </v-app-bar>
-    <v-content>
+    <v-main>
       <Home />
-    </v-content>
+    </v-main>
   </v-app>
 </template>
 
