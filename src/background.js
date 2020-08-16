@@ -2,6 +2,7 @@
 
 import { app, protocol, BrowserWindow } from 'electron'
 import { createProtocol } from 'vue-cli-plugin-electron-builder/lib'
+import './backend'
 // import installExtension, { VUEJS_DEVTOOLS } from 'electron-devtools-installer'
 const isDevelopment = process.env.NODE_ENV !== 'production'
 
@@ -40,7 +41,6 @@ function createWindow() {
   win.webContents.on('did-finish-load', () => {
     const {title, version} = require('../package.json')
     win.setTitle(`${title}  V-${version}`)
-    console.log('terminou')
   })
   win.on('closed', () => {
     win = null
