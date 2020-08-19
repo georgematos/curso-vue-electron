@@ -1,4 +1,4 @@
-module.exports = words => {
+export default words => {
   return new Promise((resolver, reject) => {
     try {
       

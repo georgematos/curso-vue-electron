@@ -1,4 +1,4 @@
-module.exports = rows => {
+export default rows => {
   return new Promise((resolver, reject) => {
     try {
 
